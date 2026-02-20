@@ -1,0 +1,144 @@
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+/* Globale Kopfzeile */
+.global-header {
+    position: fixed;
+    top: 50px;
+    right: 40px;
+
+    font-size: 48px;
+    font-weight: 400;
+
+    color: #1f4e79;   /* kannst du später ändern */
+
+    z-index: 9999;
+}
+
+
+.reveal {
+    background-color: #f5fcff;
+
+    color: #143b78;
+}
+
+.reveal .slides section {
+    text-align: left;
+    padding-top: 40px;
+}
+
+
+
+
+.subheadline {
+    margin-top: 20px;
+    color: #045f23;
+}
+
+.subheadline2 {
+    margin-top: 20px;
+    color: #b11212;
+}
+
+.subheadline3 {
+    margin-top: 20px;
+    color: #143b78;
+}
+
+
+img {
+    display: block;
+}
+
+.img-annotate{
+  position: relative;
+  width: 900px;      /* muss zur .screenshot Breite passen */
+  height: 450px;     /* muss zur .screenshot Höhe passen */
+}
+
+
+
+.slide-stack{
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.content-text{
+  color: #0f6a7a;
+  margin: 0 0 10px 0;
+}
+
+.img-wrap{
+  width: 900px;
+}
+
+.img-overlay{
+    position: relative;
+    width: 900px;
+}
+
+.screenshot{
+ 
+  width: 900px;
+  height: auto;
+  object-fit: contain;
+  object-position: left top;
+  display: block;
+}
+
+/* direkt unter dem Bild */
+.badge-row{
+  margin-top: 2px;
+  width: 900px;
+  position: relative;
+  height: 52px;   /* = Kreisgröße */
+}
+
+.badge{
+  position: absolute;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  border: 3px solid #054a20;
+  background: #f5fcff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 22px;
+  font-weight: 500;
+  color: #143b78;
+}
+
+.badge-row .badge:nth-child(1){ left: 2%;  top: 0; }
+.badge-row .badge:nth-child(2){ left: 15%; top: 0; }
+.badge-row .badge:nth-child(3){ left: 33%; top: 0; }
+.badge-row .badge:nth-child(4){ left: 53%; top: 0; }
+.badge-row .badge:nth-child(5){ left: 69%; top: 0; }
+.badge-row .badge:nth-child(6){ left: 84%; top: 0; }
+
+.hidden-badges .badge{
+  visibility: hidden;   /* nimmt Platz ein, aber nicht sichtbar */
+}
+
+.row-highlight{
+    position: absolute;
+    left: 3%;
+    width: 89%;
+
+    height: 7%;
+
+    background: rgba(231, 253, 30, 0.4);
+    border-radius: 6px;
+
+    pointer-events: none;
+}
+
+.r1{ top: 30%; }
+.r2{ top: 39%; }
+.r3{ top: 48%; }
+.r4{ top: 57%; }
+.r5{ top: 66%; }
